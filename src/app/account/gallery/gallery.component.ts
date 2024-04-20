@@ -49,9 +49,9 @@ export class GalleryComponent implements OnInit, OnDestroy {
     const endDate = new Date();
     const album: GalleryAlbum = {images: [], date: new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()))};
     for (let i = from; i <= to; i++) {
-      const src = `assets/images/${i}.jpg`;
+      const src = `assets/images/${i}.webp`;
       const caption = `Image ${i}`;
-      const thumb = `assets/images/${i}.jpg`;
+      const thumb = `assets/images/${i}.webp`;
       const image = {
          src: src,
          caption: caption,
