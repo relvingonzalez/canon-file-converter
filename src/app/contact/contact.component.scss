@@ -1,0 +1,87 @@
+@import '../../assets/styles/variables.scss';
+
+.contact {
+	width: 100%;
+
+
+	.contact-info {
+		margin-right: 20px;
+
+		h4 {
+			margin: 0 0 30px 0;
+		}
+
+		p {
+			margin-bottom: 40px;
+		}
+
+		.cont-info {
+			align-items: center;
+			display: flex;
+			font-size: $font-size-normal-larger;
+			margin-bottom: 25px;
+
+			.ci-icon {
+				width: 15px;
+				margin-right: 5px;
+
+				&.phone {
+					width: 15px;
+				}
+
+				&.email {
+
+				}
+			}
+		}
+	}
+
+	.contact-form-container {
+		padding: 64px 20px;
+		.contact-form {
+			width: 100%;
+			input[type="text"],  input[type="email"], textarea {
+			    background: $gray-input;
+			    border: none;
+			    border-radius: 4px;
+			    height: 56px;
+			    margin-bottom: 21px;
+			    padding: 0 29px;
+			    width: 100%;
+			}
+
+			textarea {
+				padding: 23px 29px;
+				height: 195px;
+			}
+		}
+	}
+
+}
+
+@media (min-width:1040px) {
+	.contact {
+		.contact-info {
+			width: 20%;
+		}
+
+		.contact-form-container {
+			width: 66%;
+			max-width: 900px;
+
+			.contact-form {
+				input {
+					&.name {
+						margin-right: 21px;
+						width: 40%;
+					}
+
+					&.email {
+						flex: 1;
+					}
+				}
+			}
+		}
+	}
+
+}

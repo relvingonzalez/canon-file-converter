@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variables.scss';
+
+button {
+	height: 34px;
+	border-radius: 0;
+}
+
+h3.group-title {
+	border-bottom: 2px solid $accent-color;
+	color: $black;
+	margin-bottom: 5px;
+}
+
+.album {
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+.images-container {
+	flex-wrap: wrap;
+}
+
+.image-container {
+	position: relative;
+	cursor: pointer;
+	margin-top: 2px;
+
+	.image {
+		opacity: 1;
+		display: block;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+}
+
+.image-container:hover .image {
+  opacity: 0.7;
+  box-shadow: 0 8px 16px 0 rgba(78,205,196,.3);
+}
+
+img {
+	width: 200px;
+	margin-right: 2px;
+}

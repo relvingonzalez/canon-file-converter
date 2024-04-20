@@ -1,0 +1,37 @@
+@import '../../assets/styles/variables.scss';
+
+header {
+	align-content: center;
+	align-items: center;
+	background-color: black;
+	color: $white;
+	display: flex;
+	height: 60px;
+	margin-bottom: 20px;
+	padding: 15px 40px;
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.main-menu {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			margin-left: 20px;
+			li {
+				margin-right: 20px;
+
+				a{
+					-webkit-transition: all 0.4s;
+					transition: all 0.4s;
+				}
+			}
+		}
+	}
+	.site-logo {
+		width: 40px;
+	}
+}
+

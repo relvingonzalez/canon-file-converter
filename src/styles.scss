@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/includes.scss';
+
+/* You can add global styles to this file, and also import other style files */
+body {
+	color: $black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: $font-size-normal;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+
+	&:hover {
+		color: $accent-color;
+		text-decoration: underline;
+	}
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+img {
+	max-width: 100%;
+}
+
+input, textarea {
+	@include placeholder {
+		font-size: $font-size-normal;
+	}
+}
+
+p {
+	color: $dark-gray;
+	line-height: 2;
+	margin-top: 0;
+}
+
+ul {
+	padding-left: 0;
+	li {
+		list-style: none;
+	}
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 400;
+	min-width: 186px;
+	padding: 17px 25px;
+	border-radius: 14px;
+	background: $accent-color;
+	color: $white;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+}
+
+.content {
+	margin-top: 80px;
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&.column {
+		flex-direction: column;
+	}
+
+	&.horizontally-centered {
+		justify-content: center;
+	}
+
+	&.vertically-centered {
+		align-items: center;
+	}
+
+	&.no-wrap {
+		flex-wrap: no-wrap;
+	}
+}
+
+.pill {
+	padding: 15px;
+	border: 1px solid $accent-color;
+	border-radius: 28px;
+	text-align: center;
+}
+
+.relative {
+	position: relative;
+}
+
+.search-icon{
+	background-image: url('assets/images/searchicon.png');
+	width: 15px;
+}

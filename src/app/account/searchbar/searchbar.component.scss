@@ -1,0 +1,40 @@
+@import '../../../assets/styles/includes.scss';
+
+.searchbar {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	color: lightseagreen;
+	padding: 15px;
+	font-style: italic;
+
+	p.app-title {
+		margin-right: 15px;
+	}
+	.input-container {
+		position: relative;
+		width: 40%;
+
+		.search-icon {
+			bottom: 0;
+			left: 10px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			width: 15px;
+		}
+
+		input {
+			height: 34px;
+			border-color: rgba(223,225,229,0);
+			border-radius: 5px;
+			box-shadow: 0 2px 4px 0 rgba(32, 33, 36, 0.28);
+			padding-left: 30px;
+			width: 100%;
+
+			@include placeholder {
+			    font-weight: bold;
+			}
+		}
+	}
+}
